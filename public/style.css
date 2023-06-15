@@ -126,6 +126,7 @@
     background: transparent;
     color: var(--text-color);
     font-size: 15px;
+    margin: 0px 7px;
     cursor: pointer;
     outline: none;
   }
@@ -133,10 +134,11 @@
   .chat-screen .messages{
     width: 100%;
     /* height: calc(100%-10px); */
-    height: 80vh;
+    height: 83vh;
     background: var(--light-bg-color);
     overflow: auto;
     border: 1px solid var(--button-bg-color);
+    border-bottom: none;
   }
 
   .chat-screen .messages .message{
@@ -185,6 +187,7 @@
     width: 100%;
     height: 50px;
     display: flex;
+    margin-bottom: 20px;
 }
 
 .chat-screen .typebox input{
@@ -204,7 +207,7 @@
     height: 100%;
     background: var(--dark-bg-color);
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 25px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -218,7 +221,6 @@
   border-radius: 2px;
   border: 1px solid var(--text-color);
   font-size: 1.5rem;
-  margin-left: 400px;
   padding: 2px 7px;
   color: var(--text-color);
   cursor: pointer;
@@ -234,4 +236,18 @@
 
 .form-input.buttons{
   display: flex;
+}
+
+
+.chat-btn{
+  display: flex;
+}
+
+
+@media(max-width: 325px){
+
+  .chat-screen .typebox input {
+    width: 1px;
+  }
+
 }
